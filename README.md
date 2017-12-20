@@ -10,3 +10,12 @@ The Riloff metrics can be run using `reddit_sarcasm_metrics.ipynb` but the `scra
 The validation set can be run using `reddit_sarcasm_eval.py`
 
 The model can be trained again by using `reddit_sarcasm_{base, features}_large.py`
+
+Dependencies:
+numpy
+scipy
+pandas
+TensorFlow or Theano (Only tested with TensorFlow)
+keras
+sklearn
+h5py
