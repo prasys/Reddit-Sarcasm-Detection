@@ -18,8 +18,8 @@ MAX_SEQUENCE_LENGTH = 30 #30 word sentences?
 
 tokenizer = Tokenizer(nb_words=MAX_NB_WORDS)
 #input_comments = ["yes sir yes", "I  love fridays","Yay that was so much fun when people would go up there with the flag and wait for people to quit so they could get a win."]
-df = pd.read_csv('file_name.csv')
-input_comments = df['Comment'].to_list()
+df = pd.read_csv('test_alta_dataset.csv')
+input_comments = df['Parent'].to_list()
 sequences = tokenizer.texts_to_sequences(input_comments)
 
 data = pad_sequences(sequences, maxlen=MAX_SEQUENCE_LENGTH)
